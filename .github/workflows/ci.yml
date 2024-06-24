@@ -17,7 +17,7 @@ jobs:
         arch: [aarch64, x86_64]
     steps:
       - name: Correct env
-        run: echo "REPO=${GITHUB_REPOSITORY,,}-${{ matrix.arch }}" >> ${GITHUB_ENV}
+        run: echo "REPO=${GITHUB_REPOSITORY,,}" >> ${GITHUB_ENV}
 
       - name: Check out code into the proper directory
         uses: actions/checkout@v4
@@ -39,5 +39,5 @@ jobs:
           context: .
           push: true
           build-args: ARCH=${{ matrix.arch }}
-          tags: ghcr.io/${{ env.REPO }}:latest
+          tags: ghcr.io/${{ env.REPO }}:${{ matrix.arch }}-latest
           platforms: linux/amd64
