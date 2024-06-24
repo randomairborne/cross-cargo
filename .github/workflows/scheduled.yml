@@ -1,8 +1,0 @@
-name: Scheduled rebuild
-on:
-  schedule:
-    - cron: '0 0 * * *'
-
-jobs:
-  rebuild:
-    uses: ./.github/workflows/check.yml

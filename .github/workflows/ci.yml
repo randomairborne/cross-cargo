@@ -5,6 +5,8 @@ on:
       - main
   workflow_dispatch:
   workflow_call:
+  schedule:
+    - cron: '0 0 * * *'
 
 permissions:
   contents: read
