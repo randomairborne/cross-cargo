@@ -1,4 +1,3 @@
 # cross-cargo
 
-## DO NOT USE THESE! THEY WILL BE REMOVED WHEN [cross-rs/cross#1516](https://github.com/cross-rs/cross/issues/1516) IS COMPLETED!
-
+[cross](https://github.com/cross-rs/cross) images with Cargo installed, so they can be used as Docker source images.
