@@ -5,4 +5,4 @@ on:
 
 jobs:
   rebuild:
-    uses: ./ci.yml
+    uses: ./.github/workflows/check.yml
