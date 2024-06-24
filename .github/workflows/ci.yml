@@ -39,5 +39,5 @@ jobs:
           context: .
           push: true
           build-args: ARCH=${{ matrix.arch }}
-          tags: ghcr.io/${{ env.REPO }}:${{ matrix.arch }}-latest
+          tags: ghcr.io/${{ env.REPO }}:${{ matrix.arch }}
           platforms: linux/amd64
